@@ -27,6 +27,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import Searchinput from './Searchinput';
+import Image from "next/image";
 
 type NavigationItem = {
   name: string;
@@ -131,9 +132,11 @@ const Dashboard: React.FC<DashboardProps> = ({ children }) => {
               </TransitionChild>
               <div className="flex grow flex-col gap-y-5 overflow-y-auto px-6 pb-4">
                 <div className="flex h-16 shrink-0 items-center">
-                  <img
+                  <Image
                     alt="public"
-                    src="/logo.png"
+                    src={"/logo.png"}
+                    width={100}
+                    height={100}
                     className="h-8 w-auto"
                   />
                 </div>
@@ -177,9 +180,11 @@ const Dashboard: React.FC<DashboardProps> = ({ children }) => {
         <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-[232px] lg:flex-col ">
           <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#213458] px-6 pb-4">
             <div className="flex h-16 shrink-0 items-center">
-              <img
+              <Image
                 alt="Your Company"
-                src="/logo.png"
+                src={'/logo.png'}
+                width={100}
+                height={100}
                 className="h-28 w-auto ml-9"
               />
             </div>
@@ -272,9 +277,11 @@ const Dashboard: React.FC<DashboardProps> = ({ children }) => {
                   <MenuButton className="flex items-center mr-2 ">
                     <span className="sr-only">Open user menu</span>
                     <h1 className='text-white mr-3'>stella</h1>
-                    <img
+                    <Image
                       alt=""
-                      src="/photo.jpg"
+                      src={"/photo.jpg"}
+                      width={32}
+                      height={32}
                       className="h-8 w-8 rounded-full bg-gray-800"
                     />
                   </MenuButton>
