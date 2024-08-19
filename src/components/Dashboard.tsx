@@ -42,8 +42,9 @@ const navigation: NavigationItem[] = [
     current: false,
     icon: AcademicCapIcon,
     subItems: [
-      { name: "All Students", href: "/students/all" },
-      { name: "Add New Students", href: "/students/new" },
+      { name: "All Students", href: "student/all-student" },
+      { name: "Add New Students", href: "/student/new-student" },
+      { name: "Trial student", href: "/students/trial" },
     ],
   },
   {
